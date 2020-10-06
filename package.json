@@ -1,0 +1,19 @@
+{
+  "name": "guiahoteles",
+  "version": "1.0.0",
+  "description": "Proyecto NodeJs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpereira2017/guia-hoteles.git"
+  },
+  "author": "Wendollin Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpereira2017/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/wpereira2017/guia-hoteles#readme"
+}
