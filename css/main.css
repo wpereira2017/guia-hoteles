@@ -12,14 +12,14 @@
 }
 
 .card-hotel{
-    flex: 1 150px;
-    padding: 2px 5px 2px 5px;
+    flex: 1 200px;
     justify-content: space-between;
     margin-top: 10px;
 }
 
 .btn-reserva{
     width: 100%;
+    border-radius: 0px;
 }
 
 .footer-address-icon{
