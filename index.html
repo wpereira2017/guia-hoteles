@@ -52,18 +52,43 @@
         <li class="breadcrumb-item active">Home</li>
       </ol>
     </div>
+    
     <div class="row">
       <div class="col-sm-4">
-        <h5>¿Cómo funciona?</h5>
-        <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="funciona">
+          ¿Cómo funciona?
+        </button>
       </div>
       <div class="col-sm-4">
-        <h5>¿Dónde puedo reservar?</h5>
-        <p>Elegís la ciudad que te interese y luego realizá la reserva con tus datos.</p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="reserva">
+          ¿Dónde puedo reservar?
+        </button>
       </div>
-      <div class="col-md-4">
-        <h5>¿Cómo pago?</h5>
-        <p>Utilizá tu tarjeta favorita.</p>
+      <div class="col-sm-4">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="pago">
+          ¿Cómo pago?
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="funciona">
+        <p>
+          <h5>¿Cómo funciona?</h5>
+          <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
+        </p>
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="reserva">
+        <p>
+          <h5>¿Dónde puedo reservar?</h5>
+          <p>Elegís la ciudad que te interese y luego realizá la reserva con tus datos.</p>
+        </p>
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="pago">
+        <p>
+          <h5>¿Cómo pago?</h5>
+          <p>Utilizá tu tarjeta favorita.</p>
+        </p>
       </div>
     </div>
 
