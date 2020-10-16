@@ -117,7 +117,7 @@
           <img class="card-img-top img-thumbnail" src="./images/hotel.png" alt="hotel png">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Hotel Buenos Aires</h5>
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis" >Hotel Buenos Aires</h5>
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p>Hotel ubicado en pleno centro.</p>
         </div>
@@ -177,11 +177,45 @@
       <div class="card card-hotel d-flex flex-column ml-2">
         <div class="card-body">
           <h5>Hotel San Pablo</h5>
-          <h6 class="card-subtitle text-muted">España</h6>
+          <h6 class="card-subtitle text-muted">Brasil</h6>
           <p>Hotel ubicado en pleno centro.</p>
+          <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Reservar</button>
         </div>
         <div>
-          <button class="btn btn-primary btn-reserva"> Reservar</button>
+          <button class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="top" title="Promociones" data-content="Consulta las promociones vigentes" > Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Tu email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje"></textarea>
+            </div>  
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Enviar</button>
         </div>
       </div>
     </div>
@@ -233,3 +267,11 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<script>
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+  })
+</script>
