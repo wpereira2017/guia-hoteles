@@ -216,7 +216,7 @@
           <h5>Hotel San Pablo</h5>
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p>Hotel ubicado en pleno centro.</p>
-          <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Reservar</button>
+          <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Reservar</button>
         </div>
         <div>
           <button class="btn btn-primary btn-reserva" data-toggle="popover" data-placement="top" title="Promociones" data-content="Consulta las promociones vigentes" > Reservar</button>
@@ -312,6 +312,18 @@
     $('[data-toggle="popover"]').popover();
     $('.carousel').carousel({
       interval: 2000
-    })
-  })
+    });
+
+    $('#contacto').on('show.bs.modal', function(e){
+      $('#contactoBtn').removeClass('btn-outline-success');
+      $('#contactoBtn').addClass('btn-primary');
+      $('#contactoBtn').prop('disabled', true);
+    });
+
+    $('#contacto').on('hidden.bs.modal', function(e){
+      $('#contactoBtn').prop('disabled', false);
+    });
+
+  });
+
 </script>
