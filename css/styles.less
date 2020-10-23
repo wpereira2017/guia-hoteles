@@ -1,22 +1,22 @@
-$yellow: #fff000;
-$red: #ff0000;
-$green: #28A745;
+@yellow: #fffa19;
+@red: #ff0000;
+@green: #28A745;
 
-@mixin margenes($top, $bottom, $padding_top) {
-    margin-top: $top;
-    margin-bottom: $bottom;
-    padding-top: $padding_top;
+.margenes(@top, @bottom, @padding_top) {
+    margin-top: @top;
+    margin-bottom: @bottom;
+    padding-top: @padding_top;
 }
 
 .jumbotron{
-    background-color: $yellow;
+    background-color: @yellow;
     color: black;
-    @include margenes(50px, 20px, 20px );
+    .margenes(50px, 20px, 20px );
 }
 
 .footer{
-    background-color: $yellow;
-    @include margenes(10px, 0px, 10px );
+    background-color: @yellow;
+    .margenes(10px, 0px, 10px );
 }
 
 .card-hotel{
